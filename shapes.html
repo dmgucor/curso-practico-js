@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometric shapes | practical JS course</title>
+  </head>
+  <body>
+    <header>
+      <h1>Geometric shapes</h1>
+      <p>This is the first workshop for the practical JavaScript course</p>
+    </header>
+
+    <section>
+      <h2>Calculate perimeter and area of a square</h2>
+      <form>
+        <label for="inputSquare"> Enter the side of your square: </label>
+        <input id="inputSquare" type="number" />
+        <button type="button" onclick="calculatePerimeterSquare()">
+          Calculate perimeter
+        </button>
+        <button type="button" onclick="calculateAreaSquare()">
+          Calculate area
+        </button>
+      </form>
+    </section>
+    <section>
+      <h2>Calculate perimeter and area of a triangle</h2>
+      <form>
+        <label for="inputTriangleSide1">
+          Enter the side 1 of your triangle:
+        </label>
+        <input id="inputTriangleSide1" type="number" />
+        <br />
+
+        <label for="inputTriangleSide2">
+          Enter the side 2 of your triangle:
+        </label>
+        <input id="inputTriangleSide2" type="number" />
+        <br />
+
+        <label for="inputTriangleBase">
+          Enter the base of your triangle:
+        </label>
+        <input id="inputTriangleBase" type="number" />
+        <br />
+
+        <label for="inputTriangleHeight">
+          Enter the height of your triangle:
+        </label>
+        <input id="inputTriangleHeight" type="number" />
+        <button type="button" onclick="calculatePerimeterTriangle()">
+          Calculate perimeter
+        </button>
+        <button type="button" onclick="calculateAreaTriangle()">
+          Calculate area
+        </button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Calculate perimeter and area of a circle</h2>
+      <form>
+        <label for="inputCircle"> Type the radius of your circle: </label>
+        <input id="inputCircle" type="number" />
+        <button type="button" onclick="calculatePerimeterCircle()">
+          Calculate perimeter
+        </button>
+        <button type="button" onclick="calculateAreaCircle()">
+          Calculate area
+        </button>
+      </form>
+    </section>
+    <script src="./shapes.js"></script>
+  </body>
+</html>

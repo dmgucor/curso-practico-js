@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculating statistics | Practical JS course</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculating statistics</h1>
+      <p>This is the third workshop for the practical JS course</p>
+    </header>
+    <section>
+      <h2>Calculate the median, media and mode</h2>
+
+      <form>
+        <label for="setOfNums">Enter your set of numbers:</label>
+        <input id="setOfNums" />
+        <p id="errorInput"></p>
+        <button type="button" onclick="onClickCalculateStats()">
+          Calculate
+        </button>
+      </form>
+      <br />
+
+      <label>Median:</label>
+      <p id="medianResult"></p>
+
+      <label>Mean:</label>
+      <p id="meanResult"></p>
+
+      <label>Mode:</label>
+      <p id="modeResult"></p>
+    </section>
+    <script src="./statistics.js"></script>
+  </body>
+</html>
