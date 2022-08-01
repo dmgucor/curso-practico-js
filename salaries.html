@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salaries</title>
+  </head>
+  <body>
+    <h1>Financial analysis</h1>
+    <p>
+      We've put together a group of 20 random subjects and collected some of
+      their financial information, but how do you compare to them?
+    </p>
+    <section>
+      <form>
+        <label for="salaryInput">Enter you salary</label>
+        <input id="salaryInput" type="number" />
+        <br />
+        <label for="addIncomeInput">Enter you additional income</label>
+        <input id="addIncomeInput" type="number" />
+        <br />
+        <label for="expensesInput">Enter you expenses</label>
+        <input id="expensesInput" type="number" />
+        <br />
+        <button type="reset" onclick="clearResults()">Clear</button>
+        <button type="button" onclick="handleCalculateButtonClick()">
+          Calculate
+        </button>
+      </form>
+    </section>
+
+    <section>
+      <div id="resultsContent">
+        <div>
+          <h3 id="top10SalariesHeader"></h3>
+          <div id="top10SalariesList"></div>
+        </div>
+
+        <div>
+          <h3 id="top10DebtCapcityHeader"></h3>
+          <div id="top10DebtCapacityList"></div>
+        </div>
+
+        <div id="salaryStatistics">
+          <h3 id="salaryStatsHeader"></h3>
+          <h4 id="medianHeader"></h4>
+          <p id="groupMedianResult"></p>
+
+          <h4 id="meanHeader"></h4>
+          <p id="groupMeanResult"></p>
+
+          <h4 id="modeHeader"></h4>
+          <p id="groupModeResult"></p>
+
+          <p id="userSalary"></p>
+        </div>
+
+        <div id="debtCapacityStatistics">
+          <h3 id="dcStatsHeader"></h3>
+          <h4 id="dcMedianHeader"></h4>
+          <p id="dcMedianResult"></p>
+
+          <h4 id="dcMeanHeader"></h4>
+          <p id="dcMeanResult"></p>
+
+          <h4 id="dcModeHeader"></h4>
+          <p id="dcModeResult"></p>
+
+          <p id="userDebtCapacity"></p>
+        </div>
+      </div>
+    </section>
+    <script src="./salaries.js"></script>
+    <script src="./analysis.js"></script>
+  </body>
+</html>
