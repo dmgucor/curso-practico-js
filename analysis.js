@@ -184,11 +184,15 @@ function getTop10DebtCapacity(userDebtCapacity, array) {
 
 //Handle button calculate action
 function handleCalculateButtonClick() {
-  const userSalary = parseInt(document.getElementById("salaryInput").value);
-  const useradditionalIncome = parseInt(
-    document.getElementById("addIncomeInput").value
-  );
-  const userExpenses = parseInt(document.getElementById("expensesInput").value);
+  let userSalary = document.getElementById("salaryInput").value;
+  userSalary = userSalary === "" ? 0 : parseInt(userSalary);
+
+  let useradditionalIncome = document.getElementById("addIncomeInput").value;
+  useradditionalIncome =
+    useradditionalIncome === "" ? 0 : parseInt(useradditionalIncome);
+
+  let userExpenses = document.getElementById("expensesInput").value;
+  userExpenses = userExpenses === "" ? 0 : parseInt(userExpenses);
 
   const userData = {
     salary: userSalary,
